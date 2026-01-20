@@ -1,0 +1,11 @@
+{
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "humao.rest-client",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
+
