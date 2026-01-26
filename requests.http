@@ -1,1 +1,85 @@
+GET http://localhost:3000/api/courses
 
+###
+
+POST http://localhost:3000/api/courses
+Content-Type: application/json
+
+{
+  "code": "CSC108",
+  "name": "Introduction to Computer Programming",
+  "capacity": 300,
+  "isClosed": false
+}
+
+###
+
+POST http://localhost:3000/api/courses
+Content-Type: application/json
+
+{
+  "code": "CSC207"
+}
+
+###
+
+POST http://localhost:3000/api/courses
+Content-Type: application/json
+
+{}
+
+###
+
+POST http://localhost:3000/api/courses
+Content-Type: application/json
+
+{
+  "code": 239
+}
+
+###
+
+POST http://localhost:3000/api/courses
+Content-Type: application/json
+
+{
+  "code": "csc309",
+  "name": "Software Tools and Systems Programming",
+  "capacity": 200,
+  "isClosed": true
+}
+
+###
+
+DELETE http://localhost:3000/api/courses/dede
+
+###
+
+DELETE http://localhost:3000/api/courses/10
+
+###
+
+DELETE http://localhost:3000/api/courses/4
+
+###
+
+POST http://localhost:3000/api/courses/3
+Content-Type: application/json
+
+{
+  "name": "Advanced programming",
+  "capacity": 30
+}
+
+###
+
+POST http://localhost:3000/api/courses/3
+Content-Type: application/json
+
+{
+  "isClosed": true
+}
+
+###
+
+GET http://localhost:3000/api/courses/1

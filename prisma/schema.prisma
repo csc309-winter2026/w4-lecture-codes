@@ -21,3 +21,13 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+model Course {
+  id        Int      @id @default(autoincrement())
+  code      String   @unique
+  name      String   @default("")
+  capacity  Int      @default(100)
+  isClosed  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
